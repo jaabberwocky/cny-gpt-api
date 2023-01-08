@@ -1,152 +1,135 @@
 {
-	"info": {
-		"_postman_id": "e27be195-da63-429c-a683-3eb637930760",
-		"name": "Fastify OpenAI",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "25120834"
-	},
-	"item": [
-		{
-			"name": "ping",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:{{port}}{{prefix}}ping",
-					"host": [
-						"localhost"
-					],
-					"port": "{{port}}{{prefix}}ping"
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "lucky-number",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:{{port}}{{prefix}}lucky-number",
-					"host": [
-						"localhost"
-					],
-					"port": "{{port}}{{prefix}}lucky-number"
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "lucky-phrase",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:{{port}}{{prefix}}lucky-phrase?name=Tobias",
-					"host": [
-						"localhost"
-					],
-					"port": "{{port}}{{prefix}}lucky-phrase",
-					"query": [
-						{
-							"key": "name",
-							"value": "Tobias"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "past 4d results",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"numbers\": [\r\n        \"6230\",\r\n        \"\"\r\n    ],\r\n    \"checkCombinations\": \"false\",\r\n    \"sortTypeInteger\": \"2\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "https://www.singaporepools.com.sg/_layouts/15/FourD/FourDCommon.aspx/Get4DNumberCheckResultsJSON",
-					"protocol": "https",
-					"host": [
-						"www",
-						"singaporepools",
-						"com",
-						"sg"
-					],
-					"path": [
-						"_layouts",
-						"15",
-						"FourD",
-						"FourDCommon.aspx",
-						"Get4DNumberCheckResultsJSON"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "previous-result",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"number\": \"6230\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:{{port}}{{prefix}}previous-result",
-					"host": [
-						"localhost"
-					],
-					"port": "{{port}}{{prefix}}previous-result"
-				}
-			},
-			"response": []
-		}
-	],
-	"event": [
-		{
-			"listen": "prerequest",
-			"script": {
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		},
-		{
-			"listen": "test",
-			"script": {
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		}
-	],
-	"variable": [
-		{
-			"key": "port",
-			"value": "3000"
-		},
-		{
-			"key": "prefix",
-			"value": "/"
-		}
-	]
+    "info": {
+        "_postman_id": "e27be195-da63-429c-a683-3eb637930760",
+        "name": "Fastify OpenAI",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "25120834"
+    },
+    "item": [
+        {
+            "name": "ping",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "localhost:{{port}}{{prefix}}ping",
+                    "host": ["localhost"],
+                    "port": "{{port}}{{prefix}}ping"
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "lucky-number",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "localhost:{{port}}{{prefix}}lucky-number",
+                    "host": ["localhost"],
+                    "port": "{{port}}{{prefix}}lucky-number"
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "lucky-phrase",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "localhost:{{port}}{{prefix}}lucky-phrase?name=Tobias",
+                    "host": ["localhost"],
+                    "port": "{{port}}{{prefix}}lucky-phrase",
+                    "query": [
+                        {
+                            "key": "name",
+                            "value": "Tobias"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "past 4d results",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"numbers\": [\r\n        \"6230\",\r\n        \"\"\r\n    ],\r\n    \"checkCombinations\": \"false\",\r\n    \"sortTypeInteger\": \"2\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://www.singaporepools.com.sg/_layouts/15/FourD/FourDCommon.aspx/Get4DNumberCheckResultsJSON",
+                    "protocol": "https",
+                    "host": ["www", "singaporepools", "com", "sg"],
+                    "path": [
+                        "_layouts",
+                        "15",
+                        "FourD",
+                        "FourDCommon.aspx",
+                        "Get4DNumberCheckResultsJSON"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "previous-result",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"number\": \"6230\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "localhost:{{port}}{{prefix}}previous-result",
+                    "host": ["localhost"],
+                    "port": "{{port}}{{prefix}}previous-result"
+                }
+            },
+            "response": []
+        }
+    ],
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "type": "text/javascript",
+                "exec": [""]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "type": "text/javascript",
+                "exec": [""]
+            }
+        }
+    ],
+    "variable": [
+        {
+            "key": "port",
+            "value": "3000"
+        },
+        {
+            "key": "prefix",
+            "value": "/"
+        }
+    ]
 }

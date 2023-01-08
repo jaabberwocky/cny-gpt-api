@@ -1,6 +1,6 @@
 # CNY GPT API
 
-API service to power the CNY GPT project. 
+API service to power the CNY GPT project.
 
 ## Routes
 
@@ -15,9 +15,9 @@ API service to power the CNY GPT project.
 2. `npm run test`: runs all existing test
 
 ## Development
+
 1. Run `npm install` to get all dependencies
 2. Run `npm run dev` to get dev server up
 3. [Optional] Use `postman.json` to load up API routes for testing in [Postman](https://www.postman.com/).
-
 
 This project was bootstrapped with Fastify-CLI.
