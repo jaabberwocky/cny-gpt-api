@@ -1,11 +1,11 @@
-import { openai } from '../utils/clients'
+import { openai } from '../../../utils/clients'
 import {
     FastifyInstance,
     FastifyReply,
     FastifyRequest,
     FastifyPluginAsync,
 } from 'fastify'
-import { QueryParams } from '../types/queryParam'
+import { QueryParams } from '../../../types/queryParam'
 
 const generateLuckyPhrase = async (
     request: FastifyRequest,

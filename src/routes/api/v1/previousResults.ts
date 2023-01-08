@@ -1,5 +1,5 @@
 import { FastifyInstance, FastifyReply, FastifyRequest } from 'fastify'
-import { ParamType } from '../types/body'
+import { ParamType } from '../../../types/body'
 
 const getPreviousResults = async (
     request: FastifyRequest<{ Params: ParamType }>,
