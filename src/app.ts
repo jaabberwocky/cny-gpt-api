@@ -8,7 +8,7 @@ export type AppOptions = {
 } & Partial<AutoloadPluginOptions>
 
 // Pass --options via CLI arguments in command to enable these options.
-const options: AppOptions = { }
+const options: AppOptions = {}
 
 const app: FastifyPluginAsync<AppOptions> = async (
     fastify,
