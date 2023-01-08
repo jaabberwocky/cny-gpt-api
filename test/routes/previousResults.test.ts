@@ -36,5 +36,3 @@ test('previous-results returns 400 if no number provided', async (t) => {
     })
     t.same(res.statusCode, 400)
 })
-
-
