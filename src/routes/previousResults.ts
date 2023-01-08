@@ -24,8 +24,7 @@ const getPreviousResults = async (
         }
     )
     const data = await resp.json()
-    console.log(data)
-    reply.status(200).send({ msg: 'received' })
+    reply.status(200).send({ data })
 }
 
 const previousResults = (fastify: FastifyInstance, opt: any, done: any) => {
