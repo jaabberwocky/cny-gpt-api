@@ -14,5 +14,10 @@ API service to power the CNY GPT project.
 1. `npm run dev`: runs dev server and listens on port 8081 by default
 2. `npm run test`: runs all existing test
 
+## Development
+1. Run `npm install` to get all dependencies
+2. Run `npm run dev` to get dev server up
+3. [Optional] Use `postman.json` to load up API routes for testing in [Postman](https://www.postman.com/).
+
 
 This project was bootstrapped with Fastify-CLI.
