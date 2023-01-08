@@ -3,7 +3,7 @@
   "compilerOptions": {
     "outDir": "dist",
     "sourceMap": true,
-    "lib": ["DOM"],
+    "lib": ["DOM"]
   },
   "include": ["src/**/*.ts"]
 }

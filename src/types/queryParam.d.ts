@@ -1,4 +1,4 @@
 export interface QueryParams {
-    name: string;
-    [key: string]: string;
+  name: string;
+  [key: string]: string;
 }

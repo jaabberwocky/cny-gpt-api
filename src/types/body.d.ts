@@ -1,3 +1,3 @@
 export interface ParamType {
-    number: string;
+  number: string;
 }
