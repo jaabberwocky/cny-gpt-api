@@ -1,9 +1,9 @@
 {
-  "extends": "fastify-tsconfig",
-  "compilerOptions": {
-    "outDir": "dist",
-    "sourceMap": true,
-    "lib": ["DOM"]
-  },
-  "include": ["src/**/*.ts"]
+    "extends": "fastify-tsconfig",
+    "compilerOptions": {
+        "outDir": "dist",
+        "sourceMap": true,
+        "lib": ["DOM"]
+    },
+    "include": ["src/**/*.ts"]
 }

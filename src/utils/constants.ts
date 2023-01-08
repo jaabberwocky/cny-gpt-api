@@ -1,3 +1,3 @@
-const prefix: string = "/api/v1";
+const prefix: string = '/api/v1'
 
-export { prefix };
+export { prefix }
