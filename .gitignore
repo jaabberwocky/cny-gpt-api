@@ -63,3 +63,9 @@ test/types/index.js
 
 # compiled app
 dist
+
+# env
+.env
+
+# bfg
+.git.bfg-report/
