@@ -24,7 +24,7 @@ const generateLuckyPhrase = async (
         max_tokens: 200,
     })
     reply.status(200).send({
-        phrase: completion.data.choices[0].text,
+        horoscope: completion.data.choices[0].text,
     })
 }
 
