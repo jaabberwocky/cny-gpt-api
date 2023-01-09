@@ -1,13 +1,14 @@
 # CNY GPT API
 
-API service to power the CNY GPT project.
+API service to power the CNY GPT project. Backed by the latest and most amazing [davinci-003](https://scale.com/blog/gpt-3-davinci-003-comparison) model.
 
 ## Routes
 
-1. `/lucky-phrase`: accepts optional "name" query parameter (e.g. `/lucky-phrase?name=James`); returns a Chat-GPT3 model Chinese New Year greeting based on name
+1. `/lucky-phrase`: accepts optional "name" query parameter (e.g. `/lucky-phrase?name=James`); returns a Chinese New Year greeting based on name
 2. `/lucky-number`: returns a randomly selected 4 digit number
 3. `/previous-result/:number`: number has to be a 4 digit number; returns previous 4D results for that number
-4. `/ping`: returns { "msg": "pong" } if service is healthy
+4. `/lucky-horoscope`: accepts optional "name" query parameter (e.g. `/lucky-horoscope?name=James`); returns a Chinese New Year horoscope based on name
+5. `/ping`: returns { "msg": "pong" } if service is healthy
 
 ## Commands
 
