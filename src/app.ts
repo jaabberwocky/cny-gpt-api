@@ -1,6 +1,7 @@
 require('dotenv').config()
 import { join } from 'path'
 import AutoLoad, { AutoloadPluginOptions } from '@fastify/autoload'
+import cors from '@fastify/cors'
 import { FastifyPluginAsync } from 'fastify'
 
 export type AppOptions = {
@@ -15,6 +16,18 @@ const app: FastifyPluginAsync<AppOptions> = async (
     opts
 ): Promise<void> => {
     // Place here your custom code!
+    await fastify.register(cors, {
+        origin: (origin, cb) => {
+            const hostname = new URL(origin).hostname
+            if(hostname === "localhost"){
+              //  Request from localhost will pass
+              cb(null, true)
+              return
+            }
+            // Generate an error on other origins, disabling access
+            cb(new Error("Not allowed"), false)
+          }
+    })
 
     // Do not touch the following lines
 
