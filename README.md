@@ -1,6 +1,6 @@
-# CNY GPT API
+# Chinese New YEar GPT API
 
-API service to power the CNY GPT project. Backed by the latest and most amazing [davinci-003](https://scale.com/blog/gpt-3-davinci-003-comparison) model!
+Chinese New Year API service backed by the latest and most amazing [davinci-003](https://scale.com/blog/gpt-3-davinci-003-comparison) model!
 
 ## Routes
 
