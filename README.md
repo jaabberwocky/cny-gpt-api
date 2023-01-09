@@ -1,4 +1,4 @@
-# Chinese New YEar GPT API
+# Chinese New Year GPT API
 
 Chinese New Year API service backed by the latest and most amazing [davinci-003](https://scale.com/blog/gpt-3-davinci-003-comparison) model!
 
